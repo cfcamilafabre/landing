@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       <header className={styles.navBar}>
         <div className={styles.containerLogo}>
-          <img src="/Logo.png" width={200} height={100} alt="Logo" />
+          <img src="/Logo.png" width={120} alt="Logo" />
         </div>
 
         <button
@@ -29,17 +29,17 @@ const Navbar = () => {
         <div id="mobile-menu" className={styles.mobileMenu}>
           <ul className={styles.ulMobileMenu}>
             <li>
-              <a className={styles.link} href="/home">
+              <a className={styles.link} href="#">
                 Bienvenida
               </a>
             </li>
             <li>
-              <a className={styles.link} href="">
+              <a className={styles.link} href="#">
                 Catálogo
               </a>
             </li>
             <li>
-              <a className={styles.link} href="">
+              <a className={styles.link} href="#">
                 Contacto
               </a>
             </li>
@@ -49,17 +49,17 @@ const Navbar = () => {
         <div className={styles.desktopMenu}>
           <ul className={styles.ulDesktopMenu}>
             <li>
-              <a className={styles.link} href="/home">
+              <a className={styles.link} href="#">
                 BIENVENIDA
               </a>
             </li>
             <li>
-              <a className={styles.link} href="">
+              <a className={styles.link} href="#">
                 CATÁLOGO
               </a>
             </li>
             <li>
-              <a className={styles.link} href="">
+              <a className={styles.link} href="#">
                 CONTACTO
               </a>
             </li>
