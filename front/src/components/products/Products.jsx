@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 const Products = () => {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id="3">
         <h2 className={styles.title}>NUESTRO MENÚ</h2>
         <div className={styles.scrollDownIndicator}>
           <span className={styles.arrow}>

@@ -3,7 +3,7 @@ import Maps from "./Maps";
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="2">
       <div className={styles.infoContainer}>
         <div className={styles.dataContainer}>
           <svg
