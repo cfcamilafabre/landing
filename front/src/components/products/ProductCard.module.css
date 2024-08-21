@@ -1,0 +1,27 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width:fit-content;
+  border: solid 0.1rem rgb(119, 118, 118);
+  padding: 0.3rem 0.3rem 1.5rem 0.3rem;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #222222;
+  cursor:pointer;
+}
+
+.cardContainer:hover {
+    transform: rotate(1turn);
+    transition: 1s;
+}
+
+.imgCard {
+  width: 12rem;
+}
+
+.titleCard {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    letter-spacing: .6em;
+    font-size: small;
+}
