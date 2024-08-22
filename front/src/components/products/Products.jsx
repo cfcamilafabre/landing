@@ -1,8 +1,23 @@
+import { useEffect, useState } from "react";
 import ArrowIcon from "../icons/ArrowIcon";
 import styles from "../products/Products.module.css";
 import ProductCard from "./ProductCard";
+import { getProducts } from "../../helpers/getProducts";
 
 const Products = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    const fetchData = async () => {
+      const products = await getProducts();
+      setLoading(false);
+      setProducts(products);
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className={styles.container} id="2">
@@ -20,12 +35,22 @@ const Products = () => {
         </div>
       </div>
       <div className={styles.container}>
-        <div className={styles.containerCards}>
-          <ProductCard title="Rolls" img="/products/1.png" />
-          <ProductCard title="Niguiris" img="/products/2.png" />
-          <ProductCard title="Combinados" img="/products/3.png" />
-          <ProductCard title="Extras" img="/products/4.png" />
-        </div>
+        {!loading ? (
+          <div className={styles.containerCards}>
+            {products &&
+              products.map((product) => {
+                return (
+                  <ProductCard
+                    key={product.id}
+                    img={product.img}
+                    title={product.title}
+                  />
+                );
+              })}
+          </div>
+        ) : (
+          <div>Loading...</div>
+        )}
       </div>
     </>
   );

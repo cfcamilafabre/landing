@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "title":"Rolls",
+        "img":"/products/1.png"
+    },
+    {
+        "id":2,
+        "title":"Niguiris",
+        "img":"/products/2.png"
+    },
+    {
+        "id":3,
+        "title":"Combinados",
+        "img":"/products/3.png"
+    },
+    {
+        "id":4,
+        "title":"Extras",
+        "img":"/products/4.png"
+    }
+]
