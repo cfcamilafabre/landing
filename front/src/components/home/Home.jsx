@@ -6,7 +6,7 @@ const Home = () => {
     <div className={styles.content}>
       <h1 className={styles.title}>FABRICANDO SUSHI</h1>
       <span className={styles.title}>SINCE 2010</span>
-      <a href="#" className={styles.button}>
+      <a href="#2" className={styles.button}>
         Ver catálogo
       </a>
     </div>

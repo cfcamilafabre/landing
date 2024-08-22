@@ -1,4 +1,5 @@
 //styles
+import MobileMenu from "../icons/MobileMenu";
 import styles from "../navbar/Navbar.module.css";
 
 //imagenes
@@ -21,25 +22,26 @@ const Navbar = () => {
           onClick={handleOpenMenu}
           className={styles.toggleMenu}
         >
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="222222" class="bi bi-list" viewBox="0 0 16 16">
-  <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-</svg>
+          <MobileMenu />
         </button>
 
-        <div id="mobile-menu" className={styles.mobileMenu}>
+        <div
+          id="mobile-menu"
+          className={`${styles.mobileMenu} ${styles.hidden}`}
+        >
           <ul className={styles.ulMobileMenu}>
             <li>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="#1">
                 Bienvenida
               </a>
             </li>
             <li>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="#2">
                 Catálogo
               </a>
             </li>
             <li>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="#3">
                 Contacto
               </a>
             </li>
@@ -49,17 +51,17 @@ const Navbar = () => {
         <div className={styles.desktopMenu}>
           <ul className={styles.ulDesktopMenu}>
             <li>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="#1">
                 BIENVENIDA
               </a>
             </li>
             <li>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="#2">
                 CATÁLOGO
               </a>
             </li>
             <li>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="#3">
                 CONTACTO
               </a>
             </li>

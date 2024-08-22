@@ -35,12 +35,11 @@ a {
 
 .form {
   background-color: #222222;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 3em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  min-width: fit-content;
 }
 
 .label {
@@ -58,7 +57,6 @@ a {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 .input:focus {
@@ -74,7 +72,6 @@ a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
   margin-top: 10px;
   width: 100%;
 }
