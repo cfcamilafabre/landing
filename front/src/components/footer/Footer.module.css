@@ -4,6 +4,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding:2em 0em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 768px) {

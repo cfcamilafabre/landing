@@ -1,21 +1,15 @@
-import "./App.css";
-import AboutUs from "./components/aboutUs/AboutUs";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import Home from "./components/home/Home";
-import Navbar from "./components/navbar/Navbar";
-import Products from "./components/products/Products";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Landing from "../src/components/landing/Landing";
+import Error from "../src/components/errorPage/Error";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <AboutUs />
-      <Products />
-      <Contact />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Landing />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
