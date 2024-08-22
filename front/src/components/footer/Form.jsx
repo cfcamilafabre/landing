@@ -7,9 +7,9 @@ import Swal from 'sweetalert2'
 export const Form = () => {
   const form = useRef();
   const inputRef = useRef(null)
-  const serviceId = process.env.SERVICE_ID;
-  const templateId = process.env.TEMPLATE_ID;
-  const publicKeyId = process.env.PUBLIC_KEY;
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  const publicKeyId = process.env.REACT_APP_PUBLIC_KEY;
 
 
   const sendEmail = (e) => {
